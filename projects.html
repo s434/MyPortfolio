@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+        :root {
+            --yellow: #F87431;
+            --light-gray: #222;
+            --dark-gray: #111;
+        }
+
+        * {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        *::selection {
+            background: var(--yellow);
+            color: #333;
+        }
+
+        html {
+            font-size: 64%;
+            overflow-x: hidden;
+        }
+
+        html::-webkit-scrollbar {
+            width: 1rem;
+            background-color: #222;
+        }
+
+        html::-webkit-scrollbar-track {
+            background: #222;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: var(--yellow);
+            border-radius: 5rem;
+        }
+
+        body {
+            background-color: var(--dark-gray);
+            overflow-x: hidden;
+            padding-left: 3rem;
+        }
+
+        .counter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .box {
+            display: flex;
+            align-items: flex-start;
+            background-color: var(--light-gray);
+            border-left: .2rem solid var(--yellow);
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0.5rem;
+        }
+
+        .date {
+            flex: 0 0 200px; /* Adjust the width as needed */
+            color: white;
+            font-size: 15px;
+            margin-right: 1rem;
+        }
+
+        .details {
+            color: white;
+            flex: 1;
+        }
+
+        .details h3 {
+            color: var(--yellow); /* Color for the h3 tag */
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .details p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .back{
+            margin-top:20px;
+        }
+        .back a{
+    margin-left: 10rem;
+    color: var(--yellow);
+    font-size: 20px;
+    transition: transform 0.3s, color 0.3s;
+
+  }
+  .back a:hover{
+    transform: scale(1.1);
+  }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <a href="index.html"><- Back to Home Page</a>
+    </div>
+    <div class="counter">
+        <div class="box">
+            <div class="date">
+                <h4>July 2024</h4>
+            </div>
+            <div class="details">
+                <h3>Recipe Finder</h3>
+                <p>Developed a recipe finder website that lets user search for recipes based on their ingredients using technologies like HTML, CSS,
+                    JavaScript, ExpressJs and MongoDB for seamless integration</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="date">
+                <h4>January 2024</h4>
+            </div>
+            <div class="details">
+                <h3>Chat Application</h3>
+                <p> Developed a real-time chat application using Android Studio, integrated with Firebase Authentication for user management and
+                    Firestore Database for seamless message storage and retrieval.
+                    </p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="date">
+                <h4>September 2022 - December 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Human Physical Activity Detection using Smartphone Data </h3>
+                <p>Developed a system to detect physical activity using smartphone sensor data, leveraging IoT and Data Mining concepts.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="date">
+                <h4>September 2022 - December 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Speech to Sign Language Translator </h3>
+                <p>Created a speech-to-sign language translator using Natural Language Processing techniques to bridge communication barriers </p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="date">
+                <h4>October 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Sales Data Analysis </h3>
+                <p>Analyzed sales data over a three-year period using Python's pandas and matplotlib libraries to gain insights into company
+                    performance.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="date">
+                <h4>October 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Zoom App Clone </h3>
+                <p>Built a video chat application similar to Zoom, utilizing Node.js, HTML, CSS, and JavaScript to enable seamless virtual meetings.
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="date">
+                <h4>September 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Snake Game</h3>
+                <p>Developed a classic Snake game using HTML, CSS, and JavaScript, challenging players to navigate a growing line without colliding.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>September 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Amazon Web Scraper</h3>
+                <p>Implemented a web scraping tool using Python's BeautifulSoup, Selenium, and Webdriver to extract product details and prices from Amazon.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>September 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Road Lane Line Detection</h3>
+                <p>Utilized Python and OpenCV to detect and track road lane lines from input images or video frames, applicable for autonomous driving.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>September 2022</h4>
+            </div>
+            <div class="details">
+                <h3>E-Commerce Website – Front end development</h3>
+                <p>Built the front-end development of an e-commerce website for a fashion brand, leveraging HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>January 2022 - May 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Deep Reinforcement Learning in Medical Image Analysis</h3>
+                <p>Explored the application of deep reinforcement learning in medical imaging for improved accuracy and efficiency, using Python.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>January 2022 - May 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Solving Influence Maximization Problem</h3>
+                <p>Conducted research and compared algorithms to maximize influence in social networks, contributing to advancements in network analysis.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>January 2022 - May 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Object Detection using YOLOv5</h3>
+                <p>Developed an object detection system using the YOLOv5 model and Python, enabling real-time object detection in various scenarios.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>January 2022 - May 2022</h4>
+            </div>
+            <div class="details">
+                <h3>Language based on the show “F.R.I.E.N.D.S”</h3>
+                <p>Designed and implemented a custom language compiler based on the popular TV show "F.R.I.E.N.D.S" using lex and yacc files.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>November 2021</h4>
+            </div>
+            <div class="details">
+                <h3>Black & White Photos to Color using Autoencoders</h3>
+                <p>Implemented a CNN-based project utilizing autoencoders to transform black and white photos into color.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>October 2021</h4>
+            </div>
+            <div class="details">
+                <h3>KenKen Puzzle using CSP</h3>
+                <p>Created a challenging puzzle based on Sudoku, leveraging Constraint Satisfaction Problem (CSP) techniques using Python.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>August 2021</h4>
+            </div>
+            <div class="details">
+                <h3>Interactive Chatbot</h3>
+                <p>Developed an interactive chatbot utilizing NLP and deep learning to recommend movies based on user preferences, enhancing user engagement.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>April 2021 - May 2021</h4>
+            </div>
+            <div class="details">
+                <h3>Music Management System</h3>
+                <p>Designed and implemented a database system using MySQL for efficient organization and management of music-related data.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="date">
+                <h4>October 2020 - December 2020</h4>
+            </div>
+            <div class="details">
+                <h3>Hospital Management System</h3>
+                <p>Developed a comprehensive hospital management system using Java, incorporating OOP principles and GUI.</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
