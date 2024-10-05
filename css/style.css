@@ -385,7 +385,7 @@ article {
     cursor: pointer;
     content: "";
   }
-  
+
   /* basic article elements styling */
   article h2 {
     margin: 0 0 18px 0;
@@ -414,6 +414,7 @@ article {
     padding: 24px;
     font-size: 15px;
   }
+
   
   /* using the has() relational pseudo selector to update our custom properties */
   article:has(:hover, :focus) {
@@ -424,7 +425,49 @@ article {
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
+  /* Modal (hidden by default) */
+.modal {
+    display: none; /* Hidden initially */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  visibility: hidden;
   
+  }
+  
+  /* Modal content */
+  .modal-content {
+    width: 800px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    max-width: 80%; /* Limit width to 80% of the viewport */
+    max-height: 80%; /* Limit height to 80% of the viewport */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+    background-color: #fff; /* Optional: Background color */
+    
+    
+  }
+  /* Modal when visible (using the show class) */
+.modal.show {
+    visibility: visible;
+    display: flex; /* Flexbox for centering */
+  }
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   
   /************************ 
   Generic layout (demo looks)
@@ -572,6 +615,7 @@ article {
         margin-inline: auto;
         padding: 4px;
         padding-inline: 22px;
+      
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 24px;
       }
@@ -582,7 +626,7 @@ article {
 
 }
 
-@media (max-width:768px){
+@media (max-width:788px){
    
     html{
         font-size: 50%;
@@ -624,6 +668,16 @@ article {
             padding: 0.7rem;
             margin: 0.3rem;
         }
+        .articles {
+            display: grid;
+         
+            margin-inline: auto;
+            padding: 4px;
+            padding-inline: 22px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 18px;
+          }
+   
     
 }
 
@@ -685,10 +739,23 @@ article {
         padding: 0.5rem;
         margin: 0.3rem;
     }
-   
+    .modal-content {
+        width: 90%; /* Adjust modal width for smaller screens */
+        max-width: 90%; /* Ensure the modal does not exceed 90% of the screen */
+        max-height: 90%; /* Limit the height to 90% of the screen */
+      }
+      
+      .modal-content img {
+        width: 100%; /* Image should fill the modal width */
+        max-width: 100%;
+        max-height: 100%; /* Adjust the image size to fit the modal */
+      }
+    
+
     
 
 }
+
 
 
 
